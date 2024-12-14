@@ -81,7 +81,7 @@ class ImageGallerySaverPlugin : FlutterPlugin, MethodCallHandler {
     private fun getMIMEType(extension: String): String? {
         var type: String? = null;
         if (!TextUtils.isEmpty(extension)) {
-            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension.toLowerCase())
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension.lowercase())
         }
         return type
     }
